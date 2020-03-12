@@ -1,8 +1,13 @@
- Prosta aplikacja implementująca jedno z rozwiązań systemów uczących się.
- Dla zadanych danych wejściowych podaje prawdopodobieństwo wystąpienia np [Sunny,Hot]
+ # Weather forecast
+>  Prosta aplikacja implementująca jedno z rozwiązań systemów uczących się. Napisana w 2013r. 
+***
+Dla zadanych danych wejściowych podaje prawdopodobieństwo wystąpienia np [Sunny,Hot]
 Określa poziom wsparcia dla danej decyzji oraz jej dokładność.
 
+## Przykład
+
  Przykładowe Dane:
+ ~~~
 @attribute outlook {sunny, overcast, rainy}
 @attribute temperature {hot, mild, cool}
 @attribute humidity {high, normal}
@@ -24,9 +29,9 @@ sunny,mild,normal,TRUE,yes
 overcast,mild,high,TRUE,yes
 overcast,hot,normal,FALSE,yes
 rainy,mild,high,TRUE,no
-
+~~~
 Decyzje:
-
+~~~java
 [sunny, hot]
 licznik dokładności: 2.0
 Mianownik dokładności: 2.0
@@ -176,3 +181,4 @@ Wsparcie dla normal wynosi 0.8333333333333334
 Wsparcie dla TRUE wynosi 0.5
 Maksymalne wspracie posiada atrybut normal i wynosi: 0.8333333333333334
 Dokładność jest spełniona i wynosi: 1.0
+~~~
